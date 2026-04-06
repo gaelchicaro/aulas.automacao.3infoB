@@ -1,5 +1,4 @@
 
-
 #duas entradas uma saída(return)
 def somar( n1, n2):
     return n1+n2
@@ -14,12 +13,3 @@ def PulaLinha():
 
 def ler():
     return int(input())
-
-imprimir("digite o número 1")
-n1= ler()
-
-imprimir('digite o número 2')
-n2 = ler()
-
-resposta = somar(n1,n2)
-imprimir(f"O resultado é: {resposta}")
