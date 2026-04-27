@@ -2,7 +2,7 @@ from aula4.funcao import imprimir
 from aula4.funcao import ler, PulaLinha,somar
 
 
-#usando as fuções
+#usando as funções
 imprimir("digite o número 1")
 n1= ler()
 
