@@ -33,7 +33,7 @@ pyautogui.press("enter")
 while True:
     time.sleep(2)
     try:
-        xy=pyautogui.locateOnScreen("aula7/Captura.png", confidence=0.7)
+        xy=pyautogui.locateOnScreen("aula7/Captura.PNG", confidence=0.98)
         pyautogui.click(xy)
         break
     except:
