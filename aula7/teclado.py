@@ -33,7 +33,7 @@ pyautogui.press("enter")
 while True:
     time.sleep(2)
     try:
-        xy=pyautogui.locateOnScreen("aula7/Captura.PNG", confidence=0.98)
+        xy=pyautogui.locateOnScreen("aula7/captura.png", confidence=0.7)
         pyautogui.click(xy)
         break
     except:
@@ -67,7 +67,7 @@ time.sleep(2)
 pyautogui.hotkey('ctrl', 'v')
 
 #clica no botão enviar
-xy = pyautogui.locateCenterOnScreen('aula7/envia.png', confidence=0.95)
+xy = pyautogui.locateCenterOnScreen('aula7/enviar.png', confidence=0.95)
 pyautogui.click(xy)
 
 #termina
