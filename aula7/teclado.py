@@ -33,11 +33,12 @@ pyautogui.press("enter")
 while True:
     time.sleep(2)
     try:
-        xy=pyautogui.locateOnScreen("aula7/captura.png", confidence=0.7)
+        xy=pyautogui.locateOnScreen("aula7/Capturar.PNG", confidence=0.9)
         pyautogui.click(xy)
         break
     except:
         print('Ainda processando...')
+
 time.sleep(2)
 
 xy=pyautogui.locateOnScreen("aula7/copiar.png", confidence=0.98)
