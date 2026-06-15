@@ -1,12 +1,11 @@
 import pandas as pd
 
-lista = ("aulas.automacao.3infoB/Trabalhos/Trabalho 2/notas_estudantes.xlsx")
+lista = ("Trabalhos/Trabalho 2/notas_estudantes.xlsx")
 
 df_notas = pd.read_excel (lista, sheet_name="Notas")
 df_atividades = pd.read_excel (lista, sheet_name="Atividades")
 
-num_linhas = df_notas.shape[0]
-df_notas.loc[num_linhas] = {"Nome": 'Lucas Silva', "Atividade": 'Prova Final', "Nota": 8.5}
+df_notas.loc[df_notas.shape[0]] = {"Nome": 'Lucas Silva', "Atividade": 'Prova Final', "Nota": 8.5}
 
 df_notas.loc[(df_notas["Nome"]=="Ana Souza") & (df_notas["Atividade"] == "Trabalho 1"),"Nota"] = 9.0
 
