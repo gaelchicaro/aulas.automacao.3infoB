@@ -4,7 +4,10 @@ lista = ("Trabalhos/Trabalho 2/notas_estudantes.xlsx")
 
 df_notas = pd.read_excel (lista, sheet_name="Notas")
 df_atividades = pd.read_excel (lista, sheet_name="Atividades")
-
+print(df_atividades)
+print(" ")
+print(df_notas)
+print(" ")
 #funciona o loc[len(df_notas)]
 df_notas.loc[df_notas.shape[0]] = {"Nome": 'Lucas Silva', "Atividade": 'Prova Final', "Nota": 8.5}
 
@@ -28,10 +31,7 @@ combinacao = pd.merge(df_notas , df_atividades, on="Atividade")
 
 df_notas.to_excel("Trabalhos/Trabalho 2/notas_estudantes_ordenado.xlsx", index=False)
 
-print(df_atividades)
-print(" ")
-print(df_notas)
-print(" ")
+
 print(nta_7)
 print(" ")
 print(media)
